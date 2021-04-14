@@ -1,20 +1,20 @@
 <template>
 	<nav class="navbar">
 
-		<div class="mobile__nav-icons">
-			<i
-					class="fas fa-bars fw"
-					:class="{hiddenIcon: isVisible}"
-					@click="showNavbar"
-			>
-			</i>
-			<i
-					class="fas fa-times fw"
-					:class="{visibleIcon: isVisible}"
-					@click="showNavbar"
-			>
-			</i>
-		</div>
+<!--		<div class="mobile__nav-icons">-->
+<!--			<i-->
+<!--					class="fas fa-bars fw"-->
+<!--					:class="{hiddenIcon: isVisible}"-->
+<!--					@click="showNavbar"-->
+<!--			>-->
+<!--			</i>-->
+<!--			<i-->
+<!--					class="fas fa-times fw"-->
+<!--					:class="{visibleIcon: isVisible}"-->
+<!--					@click="showNavbar"-->
+<!--			>-->
+<!--			</i>-->
+<!--		</div>-->
 
 		<ul class="navbar__list">
 			<li
@@ -51,7 +51,7 @@ export default {
 	},
 	computed: {
 		navItems() {
-			return this.globalRouterLinks.slice(1, 5)
+			return this.globalRouterLinks.slice(0, 5)
 		},
 	},
 	methods: {

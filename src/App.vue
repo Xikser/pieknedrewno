@@ -1,7 +1,30 @@
 <template>
-
-
+	<router-view v-slot="{ Component }">
+		<main>
+<!--			<Navbar></Navbar>-->
+			<transition
+					name="view"
+					mode="out-in"
+					@before-leave="hideFooter();"
+			>
+				<component :is="Component" />
+			</transition>
+			<Footer></Footer>
+		</main>
+	</router-view>
 </template>
+
+<script>
+import {footerVisibility} from '@/mixins/globalMixins'
+
+export default {
+	name: 'App',
+	mixins: [footerVisibility],
+	data() {
+		return{}
+	}
+}
+</script>
 
 <style lang="sass" scoped>
 .view-enter-active
