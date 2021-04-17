@@ -1,0 +1,104 @@
+<script>
+
+const shopitems = [
+	{
+		id: 1,
+		name: 'Zegarek 100% Drewno Dąb',
+		price: '70.99 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item1.jpg'),
+		alt: 'item1',
+	},
+	{
+		id: 2,
+		name: 'Krzesło model 01',
+		price: '30.00 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item2.jpg'),
+		alt: 'item2',
+	},
+	{
+		id: 3,
+		name: 'Krzesło model 02',
+		price: '40.00 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item3.jpg'),
+		alt: 'item3',
+	},
+	{
+		id: 4,
+		name: 'Krzesło model 03',
+		price: '129.99 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item4.jpg'),
+		alt: 'item4',
+	},
+
+	{
+		id: 5,
+		name: 'Zegarek 100% Drewno Akacja',
+		price: '399.99 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item1.jpg'),
+		alt: 'ite5',
+	},
+	{
+		id: 6,
+		name: 'Krzesło model 29',
+		price: '1200.00 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item4.jpg'),
+		alt: 'item2',
+	},
+	{
+		id: 7,
+		name: 'Krzesło model 74',
+		price: '423.00 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item1.jpg'),
+		alt: 'item3',
+	},
+	{
+		id: 8,
+		name: 'Krzesło model 67',
+		price: '321.34 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item4.jpg'),
+		alt: 'item4',
+	},
+	{
+		id: 9,
+		name: 'Zegarek 100% Drewno Brzoza',
+		price: '15.99 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item1.jpg'),
+		alt: 'item1',
+	},
+	{
+		id: 10,
+		name: 'Krzesło model 90',
+		price: '90.00 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item4.jpg'),
+		alt: 'item2',
+	},
+	{
+		id: 11,
+		name: 'Krzesło model 21',
+		price: '422.00 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item3.jpg'),
+		alt: 'item3',
+	},
+	{
+		id: 12,
+		name: 'Krzesło model 12',
+		price: '976.99 zł',
+		link: '#',
+		src: require('../../../../assets/images/shop/item2.jpg'),
+		alt: 'item4',
+	},
+]
+
+export default shopitems
+</script>
