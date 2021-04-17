@@ -83,5 +83,47 @@ export default {
 <style lang="sass" scoped>
 @import '../../../assets/sass/variables'
 
+.navbar
+	position: fixed
+	width: 100%
+	height: 7em
+	z-index: 1000
+	background: $color--accent
+	display: flex
+	justify-content: center
+	//border-bottom: 1px solid $color--accent
+
+	&__list
+		display: flex
+		width: 60%
+		justify-content: space-evenly
+		align-items: center
+
+	&__item
+		position: relative
+		font-size: 1.5rem
+		text-transform: uppercase
+		color: $color--light
+		letter-spacing: 2px
+
+		&::after
+			position: absolute
+			content: ''
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 0
+			z-index: -1
+			background: $color--light-accent
+			transition: all .3s ease
+
+		&:hover::after
+			height: 100%
+
+		a
+			display: block
+			padding: 15px 25px
+			width: 100%
+			height: 100%
 
 </style>
