@@ -1,7 +1,7 @@
 <template>
 	<router-view v-slot="{ Component }">
 		<main>
-<!--			<Navbar></Navbar>-->
+			<Navbar></Navbar>
 			<transition
 					name="view"
 					mode="out-in"
@@ -68,49 +68,27 @@ html
 
 body
 	overflow-x: hidden
+	background: $color--light
 	width: 100%
-	color: $color--dark
+	color: $color--light
 	font-family: $font--default
 
 main
 	position: relative
-	width: 144em
+	width: 100%
 	margin: auto
 
+i
+	color: $color--light
 @media screen and (min-width: 360px) and (max-width: 980px)
 	main
 		width: 100vw
 
-h1
-	font-size: 5rem
-
-h2
-	font-size: 3rem
-
-h3
-	font-size: 2rem
-
-h4
-	font-size: 1.75rem
-
-@media screen and (max-width: 736px)
-
-	h1
-		font-size: 3rem
-	h2
-		font-size: 2rem
-	h3
-		font-size: 1.5rem
-	h4
-		font-size: 1.25rem
-
 a
 	text-decoration: none
-	color: $color--dark
+	color: $color--light
 
 ol, ul, li
 	list-style: none
 
-a, p, span
-	font-size: 1.4rem
 </style>
