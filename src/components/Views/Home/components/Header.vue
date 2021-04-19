@@ -40,9 +40,9 @@ export default {
 
 	&__content
 		position: relative
-		width: 80%
+		width: 60%
 		min-height: 100vh
-		padding: 15em 0 0 15em
+		padding: 15em 0 0 10em
 		display: flex
 		flex-direction: column
 		align-items: flex-start
@@ -50,12 +50,12 @@ export default {
 
 	&__bg
 		position: absolute
-		width: 40%
+		width: 60%
 		height: 100vh
 		top: 0
 		right: 0
 		background-image: url("../../../../assets/images/header.jpg")
-		background-size: 40% 100vh
+		background-size: 60% 100vh
 		background-position: center right
 		background-attachment: fixed
 		background-repeat: no-repeat
@@ -74,14 +74,14 @@ export default {
 			text-align: left
 			text-transform: uppercase
 			font-family: $font--primary
-			font-size: 2.7rem
+			font-size: 2rem
 			line-height: 36px
-			letter-spacing: 1.75px
+			letter-spacing: 1.25px
 
 	.scroll
 		position: absolute
 		bottom: 20%
-		left: 29.5%
+		left: 29%
 		transition: all .3s ease
 
 		a

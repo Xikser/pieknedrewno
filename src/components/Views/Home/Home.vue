@@ -43,7 +43,7 @@ export default {
 .belt-2
 	width: 100vw
 	height: 25vh
-	background: $color--light
+	background: transparent
 	display: flex
 	flex-direction: row
 	justify-content: space-between

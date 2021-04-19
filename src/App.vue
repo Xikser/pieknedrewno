@@ -68,7 +68,7 @@ html
 
 body
 	overflow-x: hidden
-	background: $color--light
+	background: $color--light-bg
 	width: 100%
 	color: $color--light
 	font-family: $font--default
