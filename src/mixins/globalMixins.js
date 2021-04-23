@@ -100,7 +100,7 @@ export const footerVisibility = {
 		handleScroll() {
 			const scroll = window.pageYOffset
 
-			if (scroll >= 135) {
+			if (scroll >= 50) {
 				this.showFooterComp()
 			} else
 				this.hideFooter()
