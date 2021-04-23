@@ -1,27 +1,27 @@
 <template>
 	<nav class="navbar">
 
-<!--		<div class="mobile__nav-icons">-->
-<!--			<i-->
-<!--					class="fas fa-bars fw"-->
-<!--					:class="{hiddenIcon: isVisible}"-->
-<!--					@click="showNavbar"-->
-<!--			>-->
-<!--			</i>-->
-<!--			<i-->
-<!--					class="fas fa-times fw"-->
-<!--					:class="{visibleIcon: isVisible}"-->
-<!--					@click="showNavbar"-->
-<!--			>-->
-<!--			</i>-->
-<!--		</div>-->
+		<!--		<div class="mobile__nav-icons">-->
+		<!--			<i-->
+		<!--					class="fas fa-bars fw"-->
+		<!--					:class="{hiddenIcon: isVisible}"-->
+		<!--					@click="showNavbar"-->
+		<!--			>-->
+		<!--			</i>-->
+		<!--			<i-->
+		<!--					class="fas fa-times fw"-->
+		<!--					:class="{visibleIcon: isVisible}"-->
+		<!--					@click="showNavbar"-->
+		<!--			>-->
+		<!--			</i>-->
+		<!--		</div>-->
 
 		<ul class="navbar__list">
 			<li
 					class="navbar__item"
 					v-for="link in navItems"
 					:key="link.id"
-					@click.capture="handleLink"
+					@click.capture=""
 			>
 				<router-link
 						class="navbar__link"
@@ -57,7 +57,7 @@ export default {
 	methods: {
 		hideNavbar() {
 			const navbar = document.querySelector('.navbar')
-			if(navbar.classList.contains('visible')) {
+			if (navbar.classList.contains('visible')) {
 				navbar.classList.remove('visible')
 				this.isVisible = !this.isVisible
 			}
@@ -88,9 +88,10 @@ export default {
 	width: 100%
 	height: 7em
 	z-index: 1000
-	//background: $color--accent
 	display: flex
+	background: $color--accent
 	justify-content: center
+	transition: all .3s ease
 
 	&__list
 		display: flex

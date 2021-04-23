@@ -1,9 +1,9 @@
 <template functional>
 	<section class="wrapper">
 		<div class="wrapper__content">
-			<h2>" Kreatywność pozwala popełniać błędy. Sztuka to wiedzieć, które z nich zachować. " – Scott Adams</h2>
+			<h2>Jestem stolarzem z 30-to letnim starzem. Swój zakład prowadzę od 2011 roku.</h2>
 
-			<router-link to="/gallery">Sprawdź moją galerię</router-link>
+			<router-link to="/gallery">Sprawdź moje prace</router-link>
 		</div>
 	</section>
 </template>
@@ -42,12 +42,12 @@ export default {
 			font-size: 1.9rem
 			padding: 10px 25px
 			font-family: $font--primary
-			background: $color--light-accent
-			color: $color--dark
-			transition: all .3s ease
+			border: 2px solid $color--light-accent-gray
+			background: $color--accent
+			color: $color--light-accent
+			transition: all .4s ease
 
 			&:hover
-				background: $color--accent
-				color: $color--light-accent
+				border: 2px solid $color--light-accent
 
 </style>
