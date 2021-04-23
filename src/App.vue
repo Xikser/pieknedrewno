@@ -5,7 +5,7 @@
 			<transition
 					name="view"
 					mode="out-in"
-					@before-leave="hideFooter();"
+					@before-leave=""
 			>
 				<component :is="Component" />
 			</transition>
