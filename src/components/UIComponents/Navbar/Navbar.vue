@@ -88,10 +88,9 @@ export default {
 	width: 100%
 	height: 7em
 	z-index: 1000
-	background: $color--accent
+	//background: $color--accent
 	display: flex
 	justify-content: center
-	//border-bottom: 1px solid $color--accent
 
 	&__list
 		display: flex
