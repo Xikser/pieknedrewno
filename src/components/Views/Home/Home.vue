@@ -18,7 +18,7 @@
 <script>
 import Header from './components/Header'
 import Services from "@/components/Views/Home/components/Services";
-import Shop from "@/components/Views/Home/components/Shop/Shop";
+import Shop from "@/components/Views/Home/components/Shop/MainShop";
 import Wrapper from "@/components/Views/Home/components/Wrapper";
 import FAQ from "@/components/Views/Home/components/FAQ/FAQ";
 
