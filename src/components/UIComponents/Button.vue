@@ -3,10 +3,9 @@
 			:buttonStyle="buttonStyle"
 			:size="buttonSize"
 			:type="buttonType"
+			@click="clickButton(buttonText)"
 	>
 		{{ buttonText }}
-
-		<i class="fas fa-arrow-right" v-if="icon === true"></i>
 	</button>
 </template>
 
@@ -14,6 +13,9 @@
 export default {
 	name: 'Button',
 	props: {
+		listName: {
+			type: String,
+		},
 		icon: {
 			type: Boolean,
 		},
@@ -37,8 +39,22 @@ export default {
 		},
 	},
 	data() {
-		return {}
+		return {
+			iconDown: true,
+			iconUp: false,
+		}
 	},
+
+	methods: {
+		clickButton(text) {
+			this.$emit('btnClick', text)
+		},
+		changeIcon() {
+			this.iconDown = !this.iconDown
+			this.iconUp = !this.iconUp
+			this.$emit('buttonClicked', this.listName)
+		}
+	}
 }
 </script>
 
@@ -59,15 +75,19 @@ button
 		position: absolute
 		content: ''
 
+button[buttonStyle=shop-navbar]
+	padding: 5px 0 !important
+	font-size: 1.6rem !important
+
+	&:hover
+		text-decoration: underline
+
 button[buttonStyle=default]
 	text-transform: uppercase
 	color: $color--dark
-	background: $color__light
+	background: $color--light
 	font-weight: 700
 	font-family: $font--primary
-
-	i
-		margin-left: 12px
 
 	&::before
 		position: absolute
@@ -81,18 +101,22 @@ button[buttonStyle=default]
 		z-index: -1
 
 	&:hover::before
-		width: 90%
+		width: 95%
 
 	&:hover
 		color: $color--light
 
 
 button[buttonStyle=primary]
+	margin-bottom: 30px
 	text-transform: uppercase
-	color: $color--light
-	background: $color__accent
+	background: $color--light-accent
 	font-weight: 700
+	cursor: default
+	color: $color--accent
 	font-family: $font--primary
+	font-size: 1.5rem !important
+	width: 100%
 
 	i
 		margin-left: 12px
@@ -102,21 +126,15 @@ button[buttonStyle=primary]
 		content: ''
 		top: 0
 		left: 0
-		width: 0
+		width: 90%
 		height: 100%
 		transition: all .5s ease
 		background: $color--light
 		z-index: -1
 
-	&:hover::before
-		width: 90%
-
-	&:hover
-		color: $color--dark
-
 button[size=normal]
-	font-size: 1.7rem
-	padding: 10px 25px
+	font-size: 1.3rem
+	padding: 10px 15px
 
 button[size=large]
 	font-size: 1.5rem
