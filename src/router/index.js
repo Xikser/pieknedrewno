@@ -9,7 +9,9 @@ const routes = [
 	{
 		path: '/offer',
 		name: 'Oferta',
-		component: () => import('../components/Views/Offer/OfferApp')
+		components: {
+			default: () => import('../components/Views/Offer/OfferApp'),
+		},
 	},
 	{
 		path: '/gallery',
@@ -22,7 +24,7 @@ const routes = [
 		component: () => import('../components/Views/About/About.vue')
 	},
 	{
-		path: '/about',
+		path: '/contact',
 		name: 'Kontakt',
 		component: () => import('../components/Views/Contact/Contact')
 	},
