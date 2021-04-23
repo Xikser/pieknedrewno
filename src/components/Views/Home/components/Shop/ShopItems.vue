@@ -8,6 +8,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item1.jpg'),
 		alt: 'item1',
+		type: 'garden',
+		subtype: 'flowerpot',
 	},
 	{
 		id: 2,
@@ -16,6 +18,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item2.jpg'),
 		alt: 'item2',
+		type: 'garden',
+		subtype: 'garden bookshelf',
 	},
 	{
 		id: 3,
@@ -24,6 +28,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item3.jpg'),
 		alt: 'item3',
+		type: 'garden',
+		subtype: 'flowerpot',
 	},
 	{
 		id: 4,
@@ -32,8 +38,9 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item4.jpg'),
 		alt: 'item4',
+		type: 'home',
+		subtype: 'mirror frame',
 	},
-
 	{
 		id: 5,
 		name: 'Zegarek 100% Drewno Akacja',
@@ -41,6 +48,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item1.jpg'),
 		alt: 'ite5',
+		type: 'home',
+		subtype: 'bookshelf',
 	},
 	{
 		id: 6,
@@ -49,6 +58,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item4.jpg'),
 		alt: 'item2',
+		type: 'home',
+		subtype: 'chest',
 	},
 	{
 		id: 7,
@@ -57,6 +68,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item1.jpg'),
 		alt: 'item3',
+		type: 'gadget',
+		subtype: 'headphones',
 	},
 	{
 		id: 8,
@@ -65,6 +78,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item4.jpg'),
 		alt: 'item4',
+		type: 'interior',
+		subtype: 'wall panels',
 	},
 	{
 		id: 9,
@@ -73,6 +88,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item1.jpg'),
 		alt: 'item1',
+		type: 'gadget',
+		subtype: 'shoehorn',
 	},
 	{
 		id: 10,
@@ -81,6 +98,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item4.jpg'),
 		alt: 'item2',
+		type: 'gadget',
+		subtype: 'wine rack',
 	},
 	{
 		id: 11,
@@ -89,6 +108,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item3.jpg'),
 		alt: 'item3',
+		type: 'gadget',
+		subtype: 'wine rack',
 	},
 	{
 		id: 12,
@@ -97,6 +118,8 @@ const shopitems = [
 		link: '#',
 		src: require('../../../../../assets/images/shop/item2.jpg'),
 		alt: 'item4',
+		type: 'gadget',
+		subtype: 'headphones',
 	},
 ]
 
