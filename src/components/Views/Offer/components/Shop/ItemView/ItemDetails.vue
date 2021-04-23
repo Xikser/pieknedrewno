@@ -53,10 +53,8 @@
 </template>
 
 <script>
-import Viewer from './Viewer/Viewer'
 
 export default {
-	components: {Viewer},
 	props: {
 		item: {
 			type: Object,
@@ -74,6 +72,7 @@ export default {
 @import '../../../../../../assets/sass/variables'
 
 .details
+	position: relative
 	min-height: 100vh
 	background: $color--accent
 
@@ -140,26 +139,6 @@ export default {
 		position: relative
 		width: 50em
 		height: 50em
-		cursor: pointer
-
-		&::after
-			position: absolute
-			content: '+'
-			width: 100px
-			height: 100px
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%) scale(0)
-			display: flex
-			justify-content: center
-			align-items: center
-			background: rgba(0, 0, 0, .8)
-			color: $color--light-accent
-			font-size: 4rem
-			transition: all .3s ease
-
-		&:hover::after
-			transform: translate(-50%, -50%) scale(1)
 
 		img
 			width: 100%
