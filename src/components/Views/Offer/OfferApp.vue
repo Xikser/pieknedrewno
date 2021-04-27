@@ -19,7 +19,7 @@
 <script>
 import OfferNavbar from "@/components/Views/Offer/components/Navbar/OfferNavbar";
 import Shop from "@/components/Views/Offer/components/Shop/Shop";
-import ItemView from "@/components/Views/Offer/components/Shop/ItemView/ItemDetails";
+import ItemView from "@/components/Views/Offer/components/Shop/ItemDetails";
 
 export default {
 	name: 'OfferApp',

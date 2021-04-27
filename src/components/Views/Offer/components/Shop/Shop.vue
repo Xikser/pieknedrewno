@@ -15,8 +15,7 @@
 
 <script>
 import Item from "@/components/Views/Offer/components/Shop/Item";
-import ItemView from "@/components/Views/Offer/components/Shop/ItemView/ItemDetails";
-
+import ItemView from "@/components/Views/Offer/components/Shop/ItemDetails";
 import shopItems from "@/components/Views/Offer/components/Shop/libs/ShopItems";
 
 export default {

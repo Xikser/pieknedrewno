@@ -47,9 +47,6 @@ export default {
 	cursor: pointer
 	overflow: hidden
 
-	&:hover img
-		transform: scale(1.1)
-
 	&__image
 		position: relative
 		width: 100%

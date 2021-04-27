@@ -6,7 +6,8 @@
 					class="viewer__image"
 					:class="{
 						'viewer__image--vertical': vertical,
-						'viewer__image--horizontal': horizontal
+						'viewer__image--horizontal': horizontal,
+						'viewer__image--square': square,
 					}"
 			>
 				<img :src="src" alt="">
@@ -36,16 +37,13 @@ export default {
 		},
 		height: {
 			type: Number,
-			required: true,
 		},
 	},
 	data() {
 		return {
 			vertical: false,
 			horizontal: false,
-			sliderVertical: false,
-			sliderHorizontal: false,
-			currentHeight: '',
+			square: false,
 			src: '',
 		}
 	},
@@ -55,13 +53,14 @@ export default {
 	},
 	methods: {
 		setHeight(height) {
-			console.log(height)
 			if (height > 1080) {
-				this.horizontal = false
+				//vertical height
 				this.vertical = true
+				this.horizontal = false
 			} else {
-				this.vertical = false
+				//horizontal height
 				this.horizontal = true
+				this.vertical = false
 			}
 		},
 
@@ -78,7 +77,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../../../../../assets/sass/variables'
+@import '../../../assets/sass/variables'
 
 .viewer
 	position: fixed
@@ -116,6 +115,9 @@ export default {
 
 		&--vertical
 			max-width: 40em
+
+		&--square
+			max-width: 100em
 
 		img
 			width: 100%

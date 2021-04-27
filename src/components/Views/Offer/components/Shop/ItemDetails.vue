@@ -15,6 +15,13 @@
 		<div class="details__content">
 			<div class="details__image">
 				<img :src="item.src" :alt="item.alt">
+				<Button
+					buttonStyle="default"
+					buttonSize="normal"
+					buttonText="Zobacz zdjęcia"
+					@click="handleViewer()"
+					style="width: 100%"
+				></Button>
 			</div>
 
 			<div class="details__desc">
@@ -46,30 +53,43 @@
 						<p>Materiały: drewno 50%, metal 50%</p>
 					</div>
 				</div>
-
 			</div>
 		</div>
+
+		<Viewer @closed="viewer = false" :item="item" v-if="viewer"></Viewer>
 	</div>
 </template>
 
 <script>
-
+import Viewer from '@/components/UIComponents/Viewer/Viewer'
 export default {
+	components: {
+		Viewer
+	},
 	props: {
 		item: {
 			type: Object,
 		}
 	},
+	data() {
+		return {
+			viewer: false,
+		}
+	},
 	methods: {
 		changeView() {
 			this.$emit('changeView')
+		},
+
+		handleViewer() {
+			this.viewer = !this.viewer
 		}
 	}
 }
 </script>
 
 <style lang="sass" scoped>
-@import '../../../../../../assets/sass/variables'
+@import '../../../../../assets/sass/variables'
 
 .details
 	position: relative
@@ -79,7 +99,7 @@ export default {
 	&__header
 		position: relative
 		height: 40vh
-		background-image: url("../../../../../../assets/images/banners/item.jpg")
+		background-image: url("../../../../../assets/images/banners/item.jpg")
 		background-position: top center
 		background-size: 100vw 40vh
 		background-repeat: no-repeat
@@ -139,8 +159,10 @@ export default {
 		position: relative
 		width: 50em
 		height: 50em
+		transition: all .4s ease
 
 		img
+			position: relative
 			width: 100%
 			height: 100%
 

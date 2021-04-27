@@ -6,6 +6,20 @@ const shopItems = [
 		price: '1200.00 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item4.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item2',
 		type: 'home',
 		subtype: 'chest',
@@ -18,6 +32,20 @@ const shopItems = [
 		price: '399.99 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item1.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'ite5',
 		type: 'home',
 		subtype: 'bookshelf',
@@ -30,6 +58,20 @@ const shopItems = [
 		price: '129.99 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item4.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'home',
 		subtype: 'mirror frame',
@@ -42,6 +84,20 @@ const shopItems = [
 		price: '129.99 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item1.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'home',
 		subtype: 'picnic',
@@ -54,6 +110,20 @@ const shopItems = [
 		price: '40.00 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item3.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item3',
 		type: 'garden',
 		subtype: 'flowerpot',
@@ -66,6 +136,20 @@ const shopItems = [
 		price: '30.00 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item2.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item2',
 		type: 'garden',
 		subtype: 'garden bookshelf',
@@ -78,6 +162,20 @@ const shopItems = [
 		price: '70.99 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item1.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item1',
 		type: 'garden',
 		subtype: 'flowerpot',
@@ -90,6 +188,20 @@ const shopItems = [
 		price: '22.99 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item1.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'home',
 		subtype: 'picnic',
@@ -102,6 +214,20 @@ const shopItems = [
 		price: '976.99 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item2.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'gadget',
 		subtype: 'headphones',
@@ -114,6 +240,20 @@ const shopItems = [
 		price: '422.00 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item3.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item3',
 		type: 'gadget',
 		subtype: 'wine rack',
@@ -126,6 +266,20 @@ const shopItems = [
 		price: '90.00 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item4.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item2',
 		type: 'gadget',
 		subtype: 'wine rack',
@@ -138,6 +292,20 @@ const shopItems = [
 		price: '15.99 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item1.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item1',
 		type: 'gadget',
 		subtype: 'shoehorn',
@@ -150,6 +318,20 @@ const shopItems = [
 		price: '423.00 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item1.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item3',
 		type: 'gadget',
 		subtype: 'headphones',
@@ -163,6 +345,20 @@ const shopItems = [
 		price: '321.34 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item2.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'interior',
 		subtype: 'wallpanels',
@@ -175,6 +371,20 @@ const shopItems = [
 		price: '321.34 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item1.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'interior',
 		subtype: 'wallpanels',
@@ -187,6 +397,20 @@ const shopItems = [
 		price: '321.34 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item2.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'interior',
 		subtype: 'wallpanels',
@@ -199,6 +423,20 @@ const shopItems = [
 		price: '321.34 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item3.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'interior',
 		subtype: 'wallpanels',
@@ -211,6 +449,20 @@ const shopItems = [
 		price: '321.34 zł',
 		link: '#',
 		src: require('@/assets/images/shop/item2.jpg'),
+		images: [
+			{
+				img: require('@/assets/images/shop/item2.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item1.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item3.jpg')
+			},
+			{
+				img: require('@/assets/images/shop/item4.jpg')
+			},
+		],
 		alt: 'item4',
 		type: 'interior',
 		subtype: 'wallpanels',

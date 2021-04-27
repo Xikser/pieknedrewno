@@ -18,7 +18,7 @@
 
 <script>
 import photos from './libs/Photos'
-import Viewer from "@/components/Views/Gallery/components/Viewer/Viewer";
+import Viewer from "@/components/UIComponents/Viewer/Viewer";
 
 export default {
 	name: 'Gallery',
