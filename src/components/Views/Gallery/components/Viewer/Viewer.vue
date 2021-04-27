@@ -2,33 +2,74 @@
 	<section class="viewer">
 		<i class="fas fa-times fw" @click="closeViewer"></i>
 		<div class="viewer__content">
-			<div class="viewer__image">
-				<img :src="item.src" alt="">
+			<div
+					class="viewer__image"
+					:class="{
+						'viewer__image--vertical': vertical,
+						'viewer__image--horizontal': horizontal
+					}"
+			>
+				<img :src="src" alt="">
 			</div>
 
 			<div class="viewer__slider">
-				<img :src="item.src" alt="">
-				<img :src="item.src" alt="">
-				<img :src="item.src" alt="">
-			</div>
 
-			<div class="viewer__navigation">
-				<i class="fas fa-chevron-left fw"></i>
-				<i class="fas fa-chevron-right fw"></i>
+				<img
+						v-for="image in item.images"
+						:src="image.img"
+						@click="changeImage"
+						alt=""
+				>
 			</div>
 		</div>
+
 	</section>
 </template>
 
 <script>
 export default {
+	name: 'Viewer',
 	props: {
 		item: {
 			type: Object,
 			required: true,
+		},
+		height: {
+			type: Number,
+			required: true,
+		},
+	},
+	data() {
+		return {
+			vertical: false,
+			horizontal: false,
+			sliderVertical: false,
+			sliderHorizontal: false,
+			currentHeight: '',
+			src: '',
 		}
 	},
+	mounted() {
+		this.src = this.item.src
+		this.setHeight(this.height)
+	},
 	methods: {
+		setHeight(height) {
+			console.log(height)
+			if (height > 1080) {
+				this.horizontal = false
+				this.vertical = true
+			} else {
+				this.vertical = false
+				this.horizontal = true
+			}
+		},
+
+		changeImage(e) {
+			this.src = e.target.src
+			this.setHeight(e.target.naturalHeight)
+		},
+
 		closeViewer() {
 			this.$emit('closed')
 		}
@@ -37,7 +78,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../../../../../../../assets/sass/variables'
+@import '../../../../../assets/sass/variables'
 
 .viewer
 	position: fixed
@@ -51,42 +92,58 @@ export default {
 	.fa-times
 		position: absolute
 		top: 25px
-		right: 25px
+		right: 30px
 		font-size: 3em
 		cursor: pointer
+		z-index: 12000
 
 	&__content
+		position: relative
 		width: 100%
 		height: 100%
 		display: flex
+		padding-top: 50px
 		flex-direction: column
-		justify-content: space-evenly
+		justify-content: center
+		padding-bottom: 200px
 		align-items: center
 
 	&__image
-		width: 60em
-		height: 60em
+		width: auto
+
+		&--horizontal
+			max-width: 100em
+
+		&--vertical
+			max-width: 40em
 
 		img
 			width: 100%
-			height: 100%
+			height: auto
 
 	&__slider
-		width: 100%
+		position: absolute
+		bottom: 2.5%
+		left: 50%
+		transform: translateX(-50%)
+		width: 80%
+		overflow: hidden
+		height: 12em
 		display: flex
 		flex-direction: row
-		align-items: center
 		justify-content: center
+
+		&--horizontal
+			width: 100%
+
+			img
+				width: 100%
+
+		&--vertical
+			img
+				width: 50%
 
 		img
 			margin: 0 15px
-			width: 12em
-
-	&__navigation
-		width: 7em
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-		i
-			font-size: 2rem
+			cursor: pointer
 </style>
