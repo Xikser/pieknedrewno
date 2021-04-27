@@ -1,7 +1,7 @@
 <template functional>
 	<section class="wrapper">
 		<div class="wrapper__content">
-			<h2>Jestem stolarzem z 30-to letnim starzem. Swój zakład prowadzę od 2011 roku.</h2>
+			<h2>Jestem stolarzem z 30-to letnim stażem. Swój zakład prowadzę od 2011 roku.</h2>
 
 			<router-link to="/gallery">Sprawdź moje prace</router-link>
 		</div>
