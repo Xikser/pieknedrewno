@@ -75,6 +75,26 @@ button
 		position: absolute
 		content: ''
 
+button[buttonStyle=secondary]
+	padding: 10px 40px !important
+	background: $color--light-accent
+	text-transform: uppercase
+	letter-spacing: 1.5px
+
+	&::after
+		transition: all .4s ease
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 0
+		height: 100%
+		background: $color--accent
+		z-index: -1
+
+	&:hover::after
+		width: 85%
+
 button[buttonStyle=shop-navbar]
 	padding: 5px 0 !important
 	font-size: 1.6rem !important
@@ -133,7 +153,7 @@ button[buttonStyle=primary]
 		z-index: -1
 
 button[size=normal]
-	font-size: 1.3rem
+	font-size: 1.5rem
 	padding: 10px 15px
 
 button[size=large]

@@ -85,7 +85,6 @@ export default {
 	transition: all .4s ease
 	z-index: 4
 	margin: 5px
-	background: $color--light-accent
 
 	img
 		width: 100%
@@ -93,7 +92,7 @@ export default {
 		transition: all .4s ease
 
 		&:hover
-			transform: scale(.95)
+			transform: scale(.98)
 
 	&:nth-child(3n+1)
 		order: 1

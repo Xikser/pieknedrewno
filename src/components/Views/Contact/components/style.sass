@@ -1,0 +1,161 @@
+@import 'src/assets/sass/variables'
+
+.popup
+	font-size: 1.5rem
+	border: 1px solid $color--light-accent
+	padding: 10px 15px
+	margin-bottom: 25px
+
+.error
+	margin: 5px 0
+	font-size: 1.2rem
+
+input, textarea
+	outline: none
+	border: 0
+	border-radius: 0
+	resize: none
+	transition: all .4s ease
+	background: transparent
+
+.form
+	position: relative
+	width: 60%
+	padding: 70px 150px 50px 150px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	background: $color--accent
+
+	&__content
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		justify-content: center
+
+		h2
+			font-size: 2.5rem
+			margin-bottom: 20px
+
+	&__inputs
+		width: 100%
+		margin: 0 auto
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		height: 100%
+
+	&__element
+		width: 40%
+		display: flex
+		flex-direction: column
+		margin: 10px 0
+
+		&--textarea
+			width: 100%
+			margin: 30px 0
+
+		label
+			font-size: 1.4rem
+			margin-bottom: 5px
+
+	&__input
+		padding: 15px 10px 15px 0
+		color: white
+		border-bottom: 2px solid $color--light-accent-gray
+		caret-color: $color--light-accent
+
+		&:focus
+			border-bottom: 2px solid $color--light-accent
+
+		&::placeholder
+			color: white
+
+	&__textarea
+		caret-color: $color--light-accent
+		width: 100%
+		min-height: 12em
+		border: 2px solid $color--light-accent-gray
+		padding: 10px
+		color: white
+
+		&:focus
+			border: 2px solid $color--light-accent
+
+		&::placeholder
+			color: white
+
+	&__checkbox
+		width: 20em
+		height: 5em
+		margin: 0 0 25px 0
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+
+		p
+			font-size: 1.5rem
+			font-weight: 300
+
+		label
+			position: relative
+			cursor: pointer
+			margin-right: 25px
+
+			&::before
+				content: ''
+				-webkit-appearance: none
+				background-color: transparent
+				border: 1px solid $color--light-accent
+				border-radius: 4px
+				padding: 10px
+				display: inline-block
+				position: relative
+				vertical-align: middle
+				cursor: pointer
+				margin-right: 5px
+
+		input
+			padding: 0
+			height: initial
+			width: initial
+			margin-bottom: 0
+			display: none
+			cursor: pointer
+
+
+		input:checked + label:after
+			content: ''
+			display: block
+			position: absolute
+			top: 2px
+			left: 9px
+			width: 6px
+			height: 14px
+			border: solid $color--light-accent
+			border-width: 0 2px 2px 0
+			transform: rotate(45deg)
+
+.contact__info
+	//position: absolute
+	//left: 0
+	//bottom: 4%
+	width: 100%
+	margin-top: 50px
+	height: 7em
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+
+.contact__box
+	padding: 10px 25px
+	border-bottom: 2px solid $color--light-accent
+
+	span
+		cursor: default
+		font-size: 2rem
