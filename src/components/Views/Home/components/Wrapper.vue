@@ -4,6 +4,8 @@
 			<h2>Jestem stolarzem z 30-to letnim stażem. Swój zakład prowadzę od 2011 roku.</h2>
 
 			<router-link to="/gallery">Sprawdź moje prace</router-link>
+
+			<div></div>
 		</div>
 	</section>
 </template>
@@ -26,6 +28,7 @@ export default {
 	background-size: cover
 
 	&__content
+		position: relative
 		width: 100%
 		height: 100%
 		display: flex
@@ -33,6 +36,14 @@ export default {
 		justify-content: center
 		align-items: flex-start
 		padding: 0 0 0 100px
+
+		div
+			position: absolute
+			top: 0
+			right: 0
+			width: 23em
+			height: 100%
+			background: $color--light-bg
 
 		h2
 			font-size: 2.6rem
@@ -42,12 +53,8 @@ export default {
 			font-size: 1.9rem
 			padding: 10px 25px
 			font-family: $font--primary
-			border: 2px solid $color--light-accent-gray
 			background: $color--accent
 			color: $color--light-accent
 			transition: all .4s ease
-
-			&:hover
-				border: 2px solid $color--light-accent
 
 </style>

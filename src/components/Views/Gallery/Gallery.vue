@@ -54,11 +54,11 @@ export default {
 
 	&__header
 		width: 100%
-		height: 60vh
+		height: 40vh
 		background-image: url("../../../assets/images/banners/gallery.jpg")
 		background-attachment: fixed
 		background-repeat: no-repeat
-		background-size: 100vw 60vh
+		background-size: 100vw 40vh
 		background-position: top center
 
 	&__content

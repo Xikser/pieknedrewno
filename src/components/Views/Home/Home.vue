@@ -41,8 +41,9 @@ export default {
 @import '../../../assets/sass/variables'
 
 .belt-2
+	position: relative
 	width: 100vw
-	height: 25vh
+	height: 30vh
 	background: transparent
 	display: flex
 	flex-direction: row
@@ -51,12 +52,16 @@ export default {
 	padding-right: 100px
 
 	.placeholder
-		width: 40%
+		width: 23em
 		height: 100%
 		background: $color--accent
 
 	&__box
+		position: absolute
+		top: 50%
+		right: 12.6%
 		background: $color--accent
+		transform: translateY(-50%)
 		padding: 50px 100px
 		display: flex
 		flex-direction: column
@@ -71,6 +76,8 @@ export default {
 			position: relative
 			padding: 10px 40px
 			font-size: 1.7rem
+			font-weight: 700
+			text-transform: uppercase
 			color: $color--accent
 			background: $color--light-accent
 			transition: all .3s ease

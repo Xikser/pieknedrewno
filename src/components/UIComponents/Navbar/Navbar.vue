@@ -83,6 +83,15 @@ export default {
 <style lang="sass" scoped>
 @import '../../../assets/sass/variables'
 
+.is-active
+	&::before
+		transform: rotate(-45deg) !important
+		z-index: -1 !important
+
+	&::after
+		transform: rotate(45deg) !important
+		z-index: -1 !important
+
 .navbar
 	position: fixed
 	width: 100%
@@ -105,25 +114,45 @@ export default {
 		text-transform: uppercase
 		color: $color--light
 		letter-spacing: 2px
-
-		&::after
-			position: absolute
-			content: ''
-			left: 0
-			bottom: 0
-			width: 100%
-			height: 0
-			z-index: -1
-			background: $color--light-accent
-			transition: all .3s ease
-
-		&:hover::after
-			height: 100%
+		overflow: hidden
 
 		a
+			position: relative
 			display: block
 			padding: 15px 25px
 			width: 100%
 			height: 100%
+
+			&::before
+				position: absolute
+				content: ''
+				top: 50%
+				left: 0
+				width: 100%
+				height: 1px
+				transform: translateY(-20px)
+				transition: all .4s ease
+				opacity: .7
+				background: $color--light-accent
+
+			&::after
+				position: absolute
+				content: ''
+				top: 50%
+				left: 0
+				width: 100%
+				height: 1px
+				transform: translateY(20px)
+				transition: all .4s ease
+				opacity: .7
+				background: $color--light-accent
+
+			&:hover::before
+				transform: rotate(-45deg)
+				z-index: -1
+
+			&:hover::after
+				transform: rotate(45deg)
+				z-index: -1
 
 </style>

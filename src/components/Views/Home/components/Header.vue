@@ -54,7 +54,7 @@ export default {
 		height: 100vh
 		top: 0
 		right: 0
-		background-image: url("../../../../assets/images/header.jpg")
+		background-image: url("../../../../assets/images/header1.jpg")
 		background-size: 60% 100vh
 		background-position: center right
 		background-attachment: fixed
@@ -68,48 +68,45 @@ export default {
 		position: relative
 		margin: 14em 0 12em 0
 		width: 60%
+		text-align: center
+
+		&::before, &::after
+			position: absolute
+			content: ''
+			width: 50%
+			left: 50%
+			height: 2px
+			background: $color--light-accent
+
+		&::before
+			transform: translateY(-25px) translateX(-50%)
+
+		&::after
+			transform: translateY(25px) translateX(-50%)
 
 		h1
 			cursor: default
-			text-align: left
+			font-family: 'Dancing Script', cursive
 			text-transform: uppercase
-			font-family: $font--primary
 			font-size: 2rem
 			line-height: 36px
-			letter-spacing: 1.25px
+			letter-spacing: 2px
 
 	.scroll
 		position: absolute
 		bottom: 20%
 		left: 29%
 		transition: all .3s ease
+		text-align: center
 
 		a
 			position: relative
-			padding: 10px 35px
+			padding: 15px 35px
+			width: 100%
 			text-transform: uppercase
 			letter-spacing: 1.25px
 			font-size: 1.4rem
 			font-weight: 700
-			background: $color--light-accent
-			transition: all .3s ease
+			transition: all .4s ease
 			z-index: 1
-
-			&::before
-				transition: all .3s ease
-				position: absolute
-				content: ''
-				top: 0
-				left: 0
-				width: 100%
-				height: 0
-				background: $color--accent
-				z-index: -1
-
-			&:hover
-				color: $color--light-accent
-
-			&:hover::before
-				height: 85%
-
 </style>

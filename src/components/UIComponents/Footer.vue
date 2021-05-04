@@ -18,7 +18,6 @@
 			</div>
 
 			<div class="footer__contact">
-				<h2>Skontakuj się ze mną</h2>
 				<div class="contact__cell">
 					<p>Telefon:</p>
 					<span class="footer__phone">(+48) 123 123 321</span>
@@ -66,6 +65,7 @@ export default {
 		text-transform: uppercase
 		color: $color--light-accent
 		letter-spacing: 1.15px
+		cursor: default
 
 	&__content
 		width: 60%
@@ -75,11 +75,12 @@ export default {
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
-		padding: 50px 100px
+		padding: 0 70px
 		margin-bottom: 10px
 
 	&__socialmedia
 		width: 25em
+		height: 8em
 		text-align: center
 
 		p
@@ -98,32 +99,30 @@ export default {
 				font-size: 2.2rem
 
 	&__logo
-		width: 20em
+		width: 25em
+		height: 8em
+		display: flex
+		align-items: center
+		justify-content: center
 
 		img
 			padding-bottom: 30px
-			width: 70%
+			width: 40%
 
 
 	&__contact
+		padding: 20px 0
 		display: flex
 		flex-direction: column
 		justify-content: space-evenly
 
-		h2
-			font-size: 2rem
-			text-transform: uppercase
-			font-weight: 500
-			padding-bottom: 20px
-			border-bottom: 2px solid $color--light-accent
-
 		.contact__cell
-			margin: 20px 0 0 0
-			padding-bottom: 20px
-			border-bottom: 2px solid $color--light-accent
+			height: 8em
+			width: 25em
+			padding: 20px 0
 
 			p
-				font-size: 1.7rem
+				font-size: 1.4rem
 				text-transform: uppercase
 				font-family: $font--primary
 				margin-bottom: 10px
@@ -131,5 +130,5 @@ export default {
 
 			span
 				font-weight: 300
-				font-size: 1.5rem
+				font-size: 1.3rem
 </style>
