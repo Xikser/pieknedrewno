@@ -9,6 +9,8 @@
 			>
 			</Question>
 		</div>
+
+		<div class="faq__belt"></div>
 	</section>
 </template>
 
@@ -30,6 +32,7 @@ export default {
 <style lang="sass" scoped>
 @import '../../../../../assets/sass/variables'
 .faq
+	position: relative
 	display: flex
 	flex-direction: column
 	justify-content: center
@@ -66,4 +69,12 @@ export default {
 		flex-direction: column
 		justify-content: center
 		align-items: flex-start
+
+	&__belt
+		position: absolute
+		top: 0
+		left: 0
+		width: 23em
+		height: 100%
+		background: $color--accent
 </style>
