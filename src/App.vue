@@ -1,6 +1,11 @@
 <template>
 	<router-view v-slot="{ Component }">
 		<main>
+
+			<div class="top" @click="sc">
+				<i class="fas fa-chevron-up"></i>
+			</div>
+
 			<Navbar></Navbar>
 			<transition
 					name="view"
@@ -22,6 +27,11 @@ export default {
 	mixins: [footerVisibility],
 	data() {
 		return{}
+	},
+	methods: {
+		sc() {
+			window.scrollTo(0, 0)
+		}
 	}
 }
 </script>
@@ -54,6 +64,25 @@ export default {
 <style lang="sass">
 @import './assets/sass/variables'
 
+.top
+	position: fixed
+	width: 40px
+	height: 40px
+	bottom: 25px
+	right: 25px
+	border-radius: 50%
+	cursor: pointer
+	background: $color--accent
+	border: 2px solid $color--light-accent
+	z-index: 1000
+	display: flex
+	align-items: center
+	justify-content: center
+
+	i
+		font-size: 1.8rem
+		color: $color--light-accent
+
 .cubic-bezier
 	transition: all 1s cubic-bezier(0.6, 1.3, 0.6, 1.3)
 
@@ -83,6 +112,9 @@ i
 @media screen and (min-width: 360px) and (max-width: 980px)
 	main
 		width: 100vw
+
+	.top
+		display: none
 
 a
 	text-decoration: none

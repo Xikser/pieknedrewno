@@ -7,19 +7,19 @@ const routes = [
 		component: () => import('../components/Views/Home/Home.vue')
 	},
 	{
-		path: '/offer',
+		path: '/oferta',
 		name: 'Oferta',
 		components: {
 			default: () => import('../components/Views/Offer/OfferApp'),
 		},
 	},
 	{
-		path: '/gallery',
+		path: '/galeria',
 		name: 'Galeria',
 		component: () => import('../components/Views/Gallery/Gallery')
 	},
 	{
-		path: '/contact',
+		path: '/kontakt',
 		name: 'Kontakt',
 		component: () => import('../components/Views/Contact/Contact')
 	},

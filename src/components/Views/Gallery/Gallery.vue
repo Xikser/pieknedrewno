@@ -19,10 +19,12 @@
 <script>
 import photos from './libs/Photos'
 import Viewer from "@/components/UIComponents/Viewer/Viewer";
+import {handleWith} from "@/mixins/globalMixins";
 
 export default {
 	name: 'Gallery',
 	components: {Viewer},
+	mixins: [handleWith],
 	data() {
 		return {
 			photos: photos,

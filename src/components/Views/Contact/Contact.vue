@@ -8,8 +8,10 @@
 
 <script>
 import Form from './components/Form'
+import {handleWith} from "@/mixins/globalMixins";
 
 export default {
+	mixins: [handleWith],
 	name: 'Contact',
 	components: {
 		Form

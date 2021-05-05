@@ -18,7 +18,7 @@
 					<a :href="item.link">Zamów</a>
 
 				</div>
-				<router-link class="main-shop__more-button" to="/offer">Więcej</router-link>
+				<router-link class="main-shop__more-button" to="/oferta">Więcej</router-link>
 
 			</div>
 		</div>

@@ -3,7 +3,7 @@
 		<div class="wrapper__content">
 			<h2>Jestem stolarzem z 30-to letnim stażem. Swój zakład prowadzę od 2011 roku.</h2>
 
-			<router-link to="/gallery">Sprawdź moje prace</router-link>
+			<router-link to="/galeria">Sprawdź moje prace</router-link>
 
 			<div class="pc"></div>
 		</div>

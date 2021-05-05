@@ -6,7 +6,7 @@
 
 			<div class="services__offer">
 				<div class="services__box">
-					<router-link to="/" class="services__box-elements">
+					<router-link to="/oferta" class="services__box-elements">
 						<h3>Wystrój wnętrz</h3>
 						<span>01</span>
 						<p>Sprawdź ofertę</p>
@@ -14,7 +14,7 @@
 				</div>
 
 				<div class="services__box">
-					<router-link to="/" class="services__box-elements">
+					<router-link to="/oferta" class="services__box-elements">
 						<h3>Do ogrodu</h3>
 						<span>02</span>
 						<p>Sprawdź ofertę</p>
@@ -22,7 +22,7 @@
 				</div>
 
 				<div class="services__box">
-					<router-link to="/" href="" class="services__box-elements">
+					<router-link to="/oferta" href="" class="services__box-elements">
 						<h3>Do domu</h3>
 						<span>03</span>
 						<p>Sprawdź ofertę</p>
@@ -30,7 +30,7 @@
 				</div>
 
 				<div class="services__box">
-					<router-link to="/" class="services__box-elements">
+					<router-link to="/oferta" class="services__box-elements">
 						<h3>Gadżety</h3>
 						<span>04</span>
 						<p>Sprawdź ofertę</p>
@@ -210,10 +210,6 @@ export default {
 			h2
 				font-size: 3rem
 				top: 0
-
-				&::after
-					//right: 0
-					//top: 100%
 
 		&__offer
 			padding-top: 70px

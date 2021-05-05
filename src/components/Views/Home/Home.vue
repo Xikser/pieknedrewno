@@ -8,7 +8,7 @@
 			<div class="placeholder"></div>
 			<div class="belt-2__box">
 				<h2>Jesteś gotów spełnić swoje marzenie?</h2>
-				<router-link to="/contact">Skontakuj się ze mną</router-link>
+				<router-link to="/kontakt">Skontakuj się ze mną</router-link>
 			</div>
 		</div>
 		<FAQ></FAQ>
@@ -21,9 +21,11 @@ import Services from "@/components/Views/Home/components/Services";
 import Shop from "@/components/Views/Home/components/Shop/MainShop";
 import Wrapper from "@/components/Views/Home/components/Wrapper";
 import FAQ from "@/components/Views/Home/components/FAQ/FAQ";
+import {handleWith} from "@/mixins/globalMixins";
 
 export default {
 	name: 'Home',
+	mixins: [handleWith],
 	components: {
 		FAQ,
 		Wrapper,
