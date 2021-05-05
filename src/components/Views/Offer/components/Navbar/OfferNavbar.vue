@@ -1,6 +1,18 @@
 <template functional>
 	<nav class="offer__navbar">
-		<ul class="offer__navbar-list">
+
+		<div class="offer__navbar--mobile">
+			<Button
+					class="filter__button"
+					buttonStyle=""
+					buttonSize="normal"
+					buttonText="Filtruj"
+					style="cursor: pointer"
+					@click="showFilters"
+			></Button>
+		</div>
+
+		<ul class="offer__navbar-list" :class="{ 'offer__navbar-list--mobile': filters }">
 
 			<li class="offer__navbar-list-item">
 				<Button
@@ -156,11 +168,15 @@
 </template>
 
 <script>
+import {handleWith} from "@/mixins/globalMixins";
+
 export default {
 	name: 'offer nav',
+	mixins: [handleWith],
 	data() {
 		return {
 			category: '',
+			filters: false,
 		}
 	},
 	methods: {
@@ -169,6 +185,11 @@ export default {
 		},
 		navButtonClicked(subtype, category) {
 			this.$emit('clicked', subtype, category)
+			this.showFilters()
+			window.scrollTo(0, 0)
+		},
+		showFilters() {
+			this.filters = !this.filters
 		}
 	}
 }
@@ -176,6 +197,9 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../../../../assets/sass/variables'
+
+.filter__button
+	display: none
 
 .offer__navbar
 	position: relative
@@ -197,4 +221,44 @@ export default {
 	&-sub-list-item
 		padding: 10px 0
 
+</style>
+
+<style lang="sass" scoped>
+@import '../../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.filter__button
+		display: block
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		padding: 10px 25px
+		width: 100%
+		border-top: 1px solid $color--light-accent-gray
+		border-bottom: 1px solid $color--light-accent-gray
+		margin: 0 0 50px 0
+
+	.offer__navbar
+		width: 100%
+		padding: 0
+		transition: all .4s ease
+
+		&-list
+			padding: 0
+			display: none
+
+			&--mobile
+				display: flex
+				margin: 0 auto
+
+			&-item
+				text-align: center
+
+				button
+					text-transform: uppercase
+
+		&-sub-list
+			text-align: center
+
+			&-item
+				button
+					text-transform: uppercase
 </style>

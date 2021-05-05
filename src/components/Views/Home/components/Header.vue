@@ -110,3 +110,37 @@ export default {
 			transition: all .4s ease
 			z-index: 1
 </style>
+
+<style lang="sass" scoped>
+@import '../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.header
+		flex-direction: column
+
+		&__bg
+			display: none
+
+		&__content
+			width: 100%
+			padding: 20px
+			align-items: center
+			justify-content: space-evenly
+			background: $color--accent
+
+		&__logo
+			left: 0
+			text-align: center
+
+			img
+				width: 70%
+
+		&__motto
+			width: 100%
+			margin: 0
+
+		.scroll
+			position: relative
+			left: 0
+			bottom: 0
+
+</style>

@@ -96,3 +96,16 @@ export default {
 		display: flex
 		flex-direction: row
 </style>
+
+<style lang="sass" scoped>
+@import '../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.offer
+
+		&__banner
+			height: 30vh
+			background-size: cover
+
+		&__shop
+			flex-direction: column
+</style>

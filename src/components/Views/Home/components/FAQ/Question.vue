@@ -60,3 +60,16 @@ export default {
 	font-size: 1.7rem
 	line-height: 24px
 </style>
+
+<style lang="sass" scoped>
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.question
+
+		h3
+			font-size: 1.4rem
+
+	.answer
+		font-size: 1.2rem
+		line-height: 18px
+
+</style>

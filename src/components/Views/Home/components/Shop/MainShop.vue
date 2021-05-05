@@ -144,3 +144,16 @@ export default {
 		cursor: default
 
 </style>
+
+<style lang="sass" scoped>
+@import '../../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.main-shop
+
+		&__content
+			width: 100vw
+			padding-bottom: 0
+
+		&__more-button
+			bottom: 30px
+</style>

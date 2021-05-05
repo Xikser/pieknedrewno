@@ -132,3 +132,42 @@ export default {
 				font-weight: 300
 				font-size: 1.3rem
 </style>
+
+<style lang="sass" scoped>
+@import '../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.footer
+		background-image: none
+		padding: 0 0 20px 0
+
+		&__content
+			width: 100%
+			padding: 50px 25px
+			flex-direction: column
+			align-items: center
+			justify-content: center
+
+		&__socialmedia
+			height: unset
+			margin-bottom: 50px
+
+		&__logo
+			height: unset
+
+			img
+				padding-bottom: 0
+
+		&__contact
+			justify-content: center
+			align-items: center
+
+		.contact__cell
+			height: unset
+			text-align: center
+
+		.copy
+			width: 100%
+			text-align: center
+			padding: 0 35px
+			color: $color--accent
+</style>

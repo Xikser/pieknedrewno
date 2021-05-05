@@ -101,3 +101,30 @@ export default {
 				width: 90%
 
 </style>
+
+<style lang="sass" scoped>
+@import '../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.belt-2
+		height: 100%
+		padding: 50px 0
+		background: $color--accent
+
+		h2
+			text-align: center
+			font-size: 2rem
+
+		.placeholder
+			display: none
+
+		&__box
+			position: unset
+			width: 100%
+			top: 0
+			right: 0
+			padding: 0
+			transform: translateY(0)
+			align-items: center
+
+			text-align: center
+</style>

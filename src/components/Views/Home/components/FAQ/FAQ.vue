@@ -78,3 +78,20 @@ export default {
 		height: 100%
 		background: $color--accent
 </style>
+
+<style lang="sass" scoped>
+@import '../../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.faq
+
+		h2
+			font-size: 4rem
+
+		&__belt
+			display: none
+
+		&__content
+			width: 100%
+			padding: 50px 25px
+
+</style>

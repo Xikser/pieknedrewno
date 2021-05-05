@@ -141,9 +141,6 @@ input, textarea
 			transform: rotate(45deg)
 
 .contact__info
-	//position: absolute
-	//left: 0
-	//bottom: 4%
 	width: 100%
 	margin-top: 50px
 	height: 7em
@@ -159,3 +156,10 @@ input, textarea
 	span
 		cursor: default
 		font-size: 2rem
+
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.contact__info
+		flex-direction: column
+
+	.contact__box
+		border-bottom: 0

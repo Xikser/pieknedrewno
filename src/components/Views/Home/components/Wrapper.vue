@@ -5,7 +5,7 @@
 
 			<router-link to="/gallery">Sprawdź moje prace</router-link>
 
-			<div></div>
+			<div class="pc"></div>
 		</div>
 	</section>
 </template>
@@ -37,7 +37,7 @@ export default {
 		align-items: flex-start
 		padding: 0 0 0 100px
 
-		div
+		.pc
 			position: absolute
 			top: 0
 			right: 0
@@ -57,4 +57,23 @@ export default {
 			color: $color--light-accent
 			transition: all .4s ease
 
+</style>
+
+<style lang="sass" scoped>
+@import '../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.wrapper
+
+		&__content
+			padding: 0 20px
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: center
+
+			h2
+				font-size: 2rem
+
+		.pc
+			display: none
 </style>

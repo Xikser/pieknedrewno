@@ -149,3 +149,46 @@ export default {
 			margin: 0 15px
 			cursor: pointer
 </style>
+
+<style lang="sass" scoped>
+@import '../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.viewer
+		display: none
+		//min-height: 100vh
+		//height: auto
+		//
+		//&__content
+		//	min-height: 100vh
+		//	padding: 100px 0
+		//
+		//&__image
+		//	display: flex
+		//	justify-content: center
+		//	align-items: center
+		//	width: auto
+		//
+		//	&--horizontal
+		//		max-width: 90vw
+		//		min-height: 50vh
+		//
+		//	&--vertical
+		//		max-width: 50vw
+		//
+		//
+		//&__slider
+		//	position: relative
+		//	left: unset
+		//	bottom: -70px
+		//	height: unset
+		//	transform: unset
+		//	overflow: unset
+		//	width: 100%
+		//	flex-wrap: wrap
+		//	margin: 0
+		//	align-items: center
+		//
+		//	img
+		//		margin: 5px
+		//		width: 15%
+</style>

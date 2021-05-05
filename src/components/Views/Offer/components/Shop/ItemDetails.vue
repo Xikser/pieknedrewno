@@ -224,3 +224,40 @@ export default {
 			p
 				font-weight: 300
 </style>
+
+
+<style lang="sass" scoped>
+@import '../../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.details
+
+		&__header
+
+			h2
+				padding: 0
+				font-size: 3rem
+				margin: 0 auto
+
+		&__content
+			flex-direction: column
+			padding: 50px 20px 50px
+
+		&__image
+			width: 100%
+
+		&__desc
+			width: 100%
+			padding: 0
+
+		&__buy
+			width: 100%
+
+			a
+				padding: 10px 15px
+				font-size: 1.2rem
+
+			span
+				font-size: 1.2rem
+
+
+</style>

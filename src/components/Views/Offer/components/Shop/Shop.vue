@@ -101,3 +101,18 @@ export default {
 		align-items: center
 		justify-content: flex-start
 </style>
+
+<style lang="sass" scoped>
+@import '../../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.shop
+		width: 100%
+		margin: 20px 0 0 0
+
+		&__content
+			padding: 0 30px
+
+	.category
+		left: 0
+		text-align: center
+</style>

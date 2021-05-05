@@ -46,12 +46,13 @@ export default {
 		align-items: center
 
 	&__info
-		width: 60%
-		min-height: 30vh
+		width: 100%
+		margin-top: 50px
+		height: 7em
 		display: flex
 		flex-direction: row
+		justify-content: space-between
 		align-items: center
-		justify-content: space-evenly
 
 	&__box
 
@@ -62,4 +63,12 @@ export default {
 				size: 2.8rem
 				weight: 400
 				family: $font--default
+</style>
+
+<style lang="sass" scoped>
+@import '../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+
+	.contact
+		background-size: cover
 </style>

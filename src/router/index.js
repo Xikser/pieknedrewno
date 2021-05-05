@@ -18,11 +18,6 @@ const routes = [
 		name: 'Galeria',
 		component: () => import('../components/Views/Gallery/Gallery')
 	},
-	// {
-	// 	path: '/about',
-	// 	name: 'O mnie',
-	// 	component: () => import('../components/Views/About/About.vue')
-	// },
 	{
 		path: '/contact',
 		name: 'Kontakt',

@@ -198,3 +198,60 @@ export default {
 				text-transform: uppercase
 				font-family: $font--default
 </style>
+
+<style lang="sass" scoped>
+@import '../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.services
+
+		&__content
+			padding: 100px 0
+
+			h2
+				font-size: 3rem
+				top: 0
+
+				&::after
+					//right: 0
+					//top: 100%
+
+		&__offer
+			padding-top: 70px
+			flex-direction: column
+
+		&__box
+			margin: 20px 0
+			width: 80%
+			background-size: 100% 100%
+			background-repeat: no-repeat
+
+			.services__box-elements
+
+				h3
+					margin-top: 15px
+
+				p
+					padding: 0 0 15px 0
+
+			&:nth-child(1)
+				.services__box-elements
+					height: 10em
+					bottom: 0
+					top: unset
+
+			&:nth-child(2)
+				.services__box-elements
+					height: 10em
+					bottom: 0
+
+			&:nth-child(3)
+				.services__box-elements
+					height: 10em
+					bottom: 0
+					top: unset
+
+			&:nth-child(4)
+				.services__box-elements
+					height: 10em
+					bottom: 0
+</style>

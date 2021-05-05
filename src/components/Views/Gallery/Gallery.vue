@@ -106,3 +106,26 @@ export default {
 	img
 		width: 100%
 </style>
+
+<style lang="sass" scoped>
+@import '../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.gallery
+
+		&__header
+			height: 30vh
+			background-size: cover
+
+		&__content
+			padding: 30px
+			flex-flow: column
+			min-height: 200em
+			max-height: unset
+
+	.photo
+		width: 80%
+		margin: 10px auto
+
+		img
+			height: 100%
+</style>

@@ -129,3 +129,18 @@ export default {
 <style lang="sass" scoped>
 @import './style'
 </style>
+
+<style lang="sass" scoped>
+@import '../../../../assets/sass/variables'
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.form
+		width: 100%
+		padding: 50px 20px
+
+		&__inputs
+			flex-direction: column
+
+		&__element
+			width: 100%
+
+</style>

@@ -1,20 +1,20 @@
 <template>
 	<nav class="navbar">
 
-		<!--		<div class="mobile__nav-icons">-->
-		<!--			<i-->
-		<!--					class="fas fa-bars fw"-->
-		<!--					:class="{hiddenIcon: isVisible}"-->
-		<!--					@click="showNavbar"-->
-		<!--			>-->
-		<!--			</i>-->
-		<!--			<i-->
-		<!--					class="fas fa-times fw"-->
-		<!--					:class="{visibleIcon: isVisible}"-->
-		<!--					@click="showNavbar"-->
-		<!--			>-->
-		<!--			</i>-->
-		<!--		</div>-->
+		<div class="mobile__nav-icons">
+			<i
+					class="fas fa-bars fw"
+					:class="{hiddenIcon: isVisible}"
+					@click="showNavbar"
+			>
+			</i>
+			<i
+					class="fas fa-times fw"
+					:class="{visibleIcon: isVisible}"
+					@click="showNavbar"
+			>
+			</i>
+		</div>
 
 		<ul class="navbar__list">
 			<li
@@ -118,7 +118,7 @@ export default {
 
 		a
 			position: relative
-			display: block
+			display: inline-block
 			padding: 15px 25px
 			width: 100%
 			height: 100%
@@ -154,5 +154,57 @@ export default {
 			&:hover::after
 				transform: rotate(45deg)
 				z-index: -1
+
+</style>
+
+<style lang="sass" scoped>
+.hiddenIcon
+	display: none
+
+.visibleIcon
+	display: inline-block !important
+
+.visible
+	height: 100vh !important
+
+	.logo
+		top: 4% !important
+
+	.navbar__list
+		position: relative
+		display: flex
+		padding: 0
+		height: 100%
+
+.mobile__nav-icons
+	display: none
+
+@media screen and (min-width: 320px) and (max-width: 980px)
+	.mobile__nav-icons
+		position: absolute
+		height: 25px
+		display: flex
+		left: 90%
+		z-index: 501
+
+		i
+			position: relative
+			top: 90%
+			font-size: 2.5rem
+			cursor: pointer
+
+		.fa-times
+			display: none
+
+	.navbar
+		position: fixed
+		width: 100%
+		top: 0
+		left: 0
+
+		&__list
+			width: 100%
+			display: none
+			flex-direction: column
 
 </style>
