@@ -62,7 +62,11 @@ export default {
 
 	&__logo
 		position: relative
-		left: 20%
+		width: 60%
+		text-align: center
+
+		img
+			width: 30%
 
 	&__motto
 		position: relative
@@ -86,11 +90,11 @@ export default {
 
 		h1
 			cursor: default
-			font-family: 'Dancing Script', cursive
-			text-transform: uppercase
-			font-size: 2rem
-			line-height: 36px
-			letter-spacing: 2px
+			font-family: 'Italianno', cursive
+			//text-transform: uppercase
+			font-size: 4rem
+			line-height: 50px
+			letter-spacing: 5px
 
 	.scroll
 		position: absolute
