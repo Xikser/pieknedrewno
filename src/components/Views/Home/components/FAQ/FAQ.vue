@@ -1,7 +1,7 @@
 <template>
 	<section class="faq">
 		<div class="faq__content">
-			<h2>FAQ</h2>
+			<h2>Częste pytania</h2>
 			<Question
 					v-for="question in questions"
 					:key="question.id"
@@ -86,6 +86,9 @@ export default {
 
 		h2
 			font-size: 4rem
+
+			&::after
+				display: none
 
 		&__belt
 			display: none
