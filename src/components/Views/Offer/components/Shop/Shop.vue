@@ -16,7 +16,7 @@
 <script>
 import Item from "@/components/Views/Offer/components/Shop/Item";
 import ItemView from "@/components/Views/Offer/components/Shop/ItemDetails";
-import shopItems from "@/components/Views/Offer/components/Shop/libs/ShopItems";
+import {shopItems} from "@/data/data";
 
 export default {
 	name: 'offer',

@@ -32,10 +32,7 @@ export default {
 		Shop,
 		Services,
 		Header,
-	},
-	data() {
-		return {}
-	},
+	}
 }
 </script>
 
